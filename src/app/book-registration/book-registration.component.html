@@ -1,0 +1,43 @@
+<h1>Book-Registration</h1>
+<div>
+    <Form [formGroup]="bookRegistrationForm">
+        
+       <!-- <mat-label>Book-Registration</mat-label> -->
+        <mat-form-field class="example-form-field" appearance="fill">
+            <mat-label>Title</mat-label>
+            <input matInput type="text" formControlName="title">
+          </mat-form-field>
+          <mat-form-field class="example-form-field" appearance="fill">
+            <mat-label>Category</mat-label>
+            <input matInput type="text" formControlName="category">
+          </mat-form-field>
+          <mat-form-field class="example-form-field" appearance="fill">
+            <mat-label>Price</mat-label>
+            <input matInput type="text" formControlName="price">
+          </mat-form-field>
+          <mat-form-field class="example-form-field" appearance="fill">
+            <mat-label>Image</mat-label>
+            <input matInput type="text" formControlName="image">
+          </mat-form-field>
+          <mat-form-field class="example-form-field" appearance="fill">
+            <mat-label>Publisher</mat-label>
+            <input matInput type="text" formControlName="publisher">
+          </mat-form-field>
+          <mat-form-field class="example-form-field" appearance="fill">
+            <mat-select placeholder="Active" formControlName="active">
+                <mat-option value="Yes">Yes</mat-option>
+                <mat-option value="No">No</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field class="example-form-field" appearance="fill">
+            <mat-label>Content</mat-label>
+            <textarea matInput type="text" formControlName="content"></textarea>
+          </mat-form-field>
+          
+
+          <div mat-dialog-action [align]="'end'">
+            <button mat-raised-button color="Warn" mat-dialog-close>Exit</button>
+            <button style="margin-left:8px;" mat-raised-button color="primary" (click)="addRegistered()">Save</button>
+          </div>
+    </Form>
+</div>
