@@ -21,12 +21,22 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import {MatSliderModule} from '@angular/material/slider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
+import { AuthorLoginComponent } from './author-login/author-login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { GetBookListComponent } from './get-book-list/get-book-list.component';
+import { ViewBookComponent } from './view-book/view-book.component';
+import { EditBookComponent } from './edit-book/edit-book.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     BookRegistrationComponent,
-    UserRegistrationComponent
+    UserRegistrationComponent,
+    AuthorLoginComponent,
+    GetBookListComponent,
+    ViewBookComponent,
+    EditBookComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +57,8 @@ import { UserRegistrationComponent } from './user-registration/user-registration
     FormsModule,
     MatSliderModule,
     BrowserAnimationsModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

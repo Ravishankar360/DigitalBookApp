@@ -1,4 +1,25 @@
-<p>user-registration works!</p>
+<div>
+  <div>
+    <p>
+      <mat-toolbar color="primary">
+      <img src = "/assets/image/digital.jpg" alt="" style="height:60px; width:100px" class="center"> &nbsp;&nbsp;
+      <span> Digital Book App</span>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+      <img src = "/assets/image/login.jpg" alt="" style="height:50px; width:80px" class="margin-left">
+      <button mat-raised-button color="primary" (click)="signUp()">Logout</button> 
+      
+    </mat-toolbar>
+  </p>
+</div>
+
 <div>
     <Form [formGroup]="registrationForm">
         
@@ -28,8 +49,12 @@
             <input matInput type="text" formControlName="lastName">
           </mat-form-field>
           <mat-form-field class="example-form-field" appearance="fill">
-            <mat-label>Email</mat-label>
-            <input matInput type="text" formControlName="email">
+            <mat-label>User Name</mat-label>
+            <input matInput type="text" formControlName="userName">
+          </mat-form-field>
+          <mat-form-field class="example-form-field" appearance="fill">
+            <mat-label>User Email</mat-label>
+            <input matInput type="text" formControlName="userEmail">
           </mat-form-field>
           <mat-form-field class="example-form-field" appearance="fill">
             <mat-label>New Password</mat-label>
@@ -52,8 +77,8 @@
             <input matInput type="text" formControlName="postalCode">
           </mat-form-field>
           <mat-form-field class="example-form-field" appearance="fill">
-            <mat-label>Phone Number</mat-label>
-            <input matInput type="text" formControlName="phoneNumber">
+            <mat-label>User Active</mat-label>
+            <input matInput type="number" formControlName="isActive">
           </mat-form-field>
 
           <div mat-dialog-action [align]="'end'">
@@ -62,3 +87,5 @@
           </div>
     </Form>
 </div>
+
+
